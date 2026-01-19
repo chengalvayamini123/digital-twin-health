@@ -1,0 +1,524 @@
+[
+    {
+        "id": "e2498bcfbc8e7afb",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "70d690e474ee039e",
+        "type": "ui_tab",
+        "name": "Digital Twin Dashboard",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c2940e5e79ea5987",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "f4bbea9a6191236b",
+        "type": "ui_group",
+        "name": "Health Monitor",
+        "tab": "70d690e474ee039e",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "11168a9014bf7bf5",
+        "type": "ui_tab",
+        "name": "Digital Twin dashboard",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5a06374cfd71236d",
+        "type": "ui_group",
+        "name": "Health monitor",
+        "tab": "11168a9014bf7bf5",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5b73a1e630a6c4c1",
+        "type": "ui_tab",
+        "name": "Digital Twin Dashboard",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "07b99d01edc9d72e",
+        "type": "ui_group",
+        "name": "Health Monitor",
+        "tab": "5b73a1e630a6c4c1",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "85f80c85740c76a0",
+        "type": "ui_tab",
+        "name": "Digital Twin Dashboard",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "bb36093b45d4c7e3",
+        "type": "ui_group",
+        "name": "Health Monitor",
+        "tab": "85f80c85740c76a0",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "27801f3c99055563",
+        "type": "ui_tab",
+        "name": "Digital Twin Dashboard",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "418fe3426d95aa0f",
+        "type": "ui_group",
+        "name": "Health Monitor",
+        "tab": "27801f3c99055563",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "bb948e88f3a39881",
+        "type": "http in",
+        "z": "e2498bcfbc8e7afb",
+        "name": "",
+        "url": "/health-data",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 210,
+        "y": 160,
+        "wires": [
+            [
+                "2b1cdc6ca179523a"
+            ]
+        ]
+    },
+    {
+        "id": "acdf2a81b39c234d",
+        "type": "function",
+        "z": "e2498bcfbc8e7afb",
+        "name": "function 1",
+        "func": "// Get JSON body from HTTP request\nmsg.payload = msg.req.body;\n\n// Debug log\nnode.warn(\"Received body: \" + JSON.stringify(msg.payload));\n\n// Add fan logic\nmsg.fan = msg.payload.temperature > 37.5 ? \"ON\" : \"OFF\";\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 160,
+        "wires": [
+            [
+                "fb0b8dc16efc8d5b",
+                "cf75dc8adeeddb35",
+                "addc9b8bf6db92ef",
+                "c6b2074ebb983bef",
+                "185e1127122b11b8",
+                "c7a5ae714b2017a1"
+            ]
+        ]
+    },
+    {
+        "id": "c7a5ae714b2017a1",
+        "type": "ui_text",
+        "z": "e2498bcfbc8e7afb",
+        "group": "5a06374cfd71236d",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Fan Status",
+        "format": "{{msg.fan}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1150,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "285534daa26efd08",
+        "type": "ui_gauge",
+        "z": "e2498bcfbc8e7afb",
+        "name": "",
+        "group": "5a06374cfd71236d",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Body Temperature (°C)",
+        "label": "°C",
+        "format": "{{msg.payload}}",
+        "min": "35",
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "37",
+        "seg2": "40",
+        "diff": false,
+        "className": "",
+        "x": 1180,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "5e2e5844df2a99d5",
+        "type": "ui_gauge",
+        "z": "e2498bcfbc8e7afb",
+        "name": "",
+        "group": "5a06374cfd71236d",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Heart Rate (BPM)",
+        "label": "BPM",
+        "format": "{{msg.payload}}",
+        "min": "60",
+        "max": "120",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "90",
+        "seg2": "110",
+        "diff": false,
+        "className": "",
+        "x": 1170,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "9a7283c3b7aeea95",
+        "type": "ui_gauge",
+        "z": "e2498bcfbc8e7afb",
+        "name": "",
+        "group": "5a06374cfd71236d",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "SpO2 (%)",
+        "label": "%",
+        "format": "{{msg.payload}}",
+        "min": "90",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "100",
+        "seg2": "92",
+        "diff": false,
+        "className": "",
+        "x": 1120,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "40983c5d52f11a6f",
+        "type": "ui_text",
+        "z": "e2498bcfbc8e7afb",
+        "group": "5a06374cfd71236d",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Blood Pressure",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1120,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "2b1cdc6ca179523a",
+        "type": "json",
+        "z": "e2498bcfbc8e7afb",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 430,
+        "y": 160,
+        "wires": [
+            [
+                "acdf2a81b39c234d",
+                "123ad9a61759c275"
+            ]
+        ]
+    },
+    {
+        "id": "fb0b8dc16efc8d5b",
+        "type": "http response",
+        "z": "e2498bcfbc8e7afb",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 810,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "cf75dc8adeeddb35",
+        "type": "change",
+        "z": "e2498bcfbc8e7afb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.temperature",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 900,
+        "y": 220,
+        "wires": [
+            [
+                "285534daa26efd08"
+            ]
+        ]
+    },
+    {
+        "id": "addc9b8bf6db92ef",
+        "type": "change",
+        "z": "e2498bcfbc8e7afb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.heart_rate",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 900,
+        "y": 320,
+        "wires": [
+            [
+                "5e2e5844df2a99d5"
+            ]
+        ]
+    },
+    {
+        "id": "c6b2074ebb983bef",
+        "type": "change",
+        "z": "e2498bcfbc8e7afb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.spo2",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 900,
+        "y": 420,
+        "wires": [
+            [
+                "9a7283c3b7aeea95"
+            ]
+        ]
+    },
+    {
+        "id": "185e1127122b11b8",
+        "type": "change",
+        "z": "e2498bcfbc8e7afb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.bp",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 520,
+        "wires": [
+            [
+                "40983c5d52f11a6f"
+            ]
+        ]
+    },
+    {
+        "id": "123ad9a61759c275",
+        "type": "debug",
+        "z": "e2498bcfbc8e7afb",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 60,
+        "wires": []
+    }
+]

@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: digital-twin-health
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: digital-twin-health
+  template:
+    metadata:
+      labels:
+        app: digital-twin-health
+    spec:
+      containers:
+      - name: digital-twin-health
+        image: digital-twin-health
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 1880
